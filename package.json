@@ -1,0 +1,19 @@
+{
+  "name": "powersync-web-workers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "zx ./build.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@powersync/web": "0.5.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.1",
+    "zx": "^8.0.2"
+  }
+}

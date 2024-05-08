@@ -1,0 +1,32 @@
+diff --git a/lib/src/db/sync/SharedWebStreamingSyncImplementation.js b/lib/src/db/sync/SharedWebStreamingSyncImplementation.js
+index ca8402e65d713139ffd1667a8cffa1a22a3b5b00..95e2f7fe99970b2b8cdc5a201a4e20f58d42bd89 100644
+--- a/lib/src/db/sync/SharedWebStreamingSyncImplementation.js
++++ b/lib/src/db/sync/SharedWebStreamingSyncImplementation.js
+@@ -93,7 +93,7 @@ export class SharedWebStreamingSyncImplementation extends WebStreamingSyncImplem
+          * Configure or connect to the shared sync worker.
+          * This worker will manage all syncing operations remotely.
+          */
+-        const syncWorker = new SharedWorker(new URL('../../worker/sync/SharedSyncImplementation.worker.js', import.meta.url), {
++        const syncWorker = new SharedWorker('/lib/powersync/worker/sync/SharedSyncImplementation.worker.js', {
+             /* @vite-ignore */
+             name: `shared-sync-${this.webOptions.identifier}`,
+             type: 'module'
+diff --git a/lib/src/worker/db/open-worker-database.js b/lib/src/worker/db/open-worker-database.js
+index fbb10074c8f70f5f2ffd8000d813880d78de71ed..e9f2e6eaf9a1a3c7a6dba310aee952b8c02171cb 100644
+--- a/lib/src/worker/db/open-worker-database.js
++++ b/lib/src/worker/db/open-worker-database.js
+@@ -10,12 +10,12 @@ export function openWorkerDatabasePort(workerIdentifier, multipleTabs = true) {
+      *  (in the case of Android)
+      */
+     return multipleTabs
+-        ? new SharedWorker(new URL('./SharedWASQLiteDB.worker.js', import.meta.url), {
++        ? new SharedWorker('/lib/powersync/worker/db/SharedWASQLiteDB.worker.js', {
+             /* @vite-ignore */
+             name: `shared-DB-worker-${workerIdentifier}`,
+             type: 'module'
+         }).port
+-        : new Worker(new URL('./WASQLiteDB.worker.js', import.meta.url), {
++        : new Worker('/lib/powersync/worker/db/WASQLiteDB.worker.js', {
+             /* @vite-ignore */
+             name: `DB-worker-${workerIdentifier}`,
+             type: 'module'
