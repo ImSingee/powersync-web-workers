@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@powersync/web": "0.5.2"
+    "@powersync/web": "0.6.0"
   },
   "devDependencies": {
     "esbuild": "^0.21.1",

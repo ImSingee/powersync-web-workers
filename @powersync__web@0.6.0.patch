@@ -1,5 +1,5 @@
 diff --git a/lib/src/db/sync/SharedWebStreamingSyncImplementation.js b/lib/src/db/sync/SharedWebStreamingSyncImplementation.js
-index ca8402e65d713139ffd1667a8cffa1a22a3b5b00..95e2f7fe99970b2b8cdc5a201a4e20f58d42bd89 100644
+index 605986fc87b52789f02b5058c4e9b4e348701e7d..85fa77e475f41c98c189b10b70284665ae1b7e86 100644
 --- a/lib/src/db/sync/SharedWebStreamingSyncImplementation.js
 +++ b/lib/src/db/sync/SharedWebStreamingSyncImplementation.js
 @@ -93,7 +93,7 @@ export class SharedWebStreamingSyncImplementation extends WebStreamingSyncImplem
