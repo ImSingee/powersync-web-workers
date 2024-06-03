@@ -4,7 +4,7 @@
 
 ## Build PowerSync worker scripts
 
-The `dist` dir of the repo ships the built worker scripts for `@powersync/web@0.6.0` and `@journeyapps/wa-sqlite@0.2.0`.
+The `dist` dir of the repo ships the built worker scripts for `@powersync/web@1.0.0` and `@journeyapps/wa-sqlite@0.2.0`.
 
 If you need to use other versions, you need to change the version in `package.json`, and run:
 
@@ -27,4 +27,4 @@ You need to patch the following files of `@powersync/web` module to make it use 
 - `lib/src/db/sync/SharedWebStreamingSyncImplementation.js`
 - `lib/src/worker/db/open-worker-database.js`
 
-Change the `new URL('xxx', import.meta.url)` in these files to `'/public/lib/powersync/worker/xxx'`. See `@powersync__web@0.6.0.patch` file in the repo for reference.
+Change the `new URL('xxx', import.meta.url)` in these files to `'/public/lib/powersync/worker/xxx'`. See `@powersync__web@1.0.0.patch` file in the repo for reference.

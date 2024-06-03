@@ -1,5 +1,5 @@
 diff --git a/lib/src/db/sync/SharedWebStreamingSyncImplementation.js b/lib/src/db/sync/SharedWebStreamingSyncImplementation.js
-index 605986fc87b52789f02b5058c4e9b4e348701e7d..85fa77e475f41c98c189b10b70284665ae1b7e86 100644
+index a9117269a7ac8f7f033e7e83ee9bd4f0a10a1151..7653eaed87af46e4717204e7fe4e47352485d5cf 100644
 --- a/lib/src/db/sync/SharedWebStreamingSyncImplementation.js
 +++ b/lib/src/db/sync/SharedWebStreamingSyncImplementation.js
 @@ -93,7 +93,7 @@ export class SharedWebStreamingSyncImplementation extends WebStreamingSyncImplem
@@ -12,7 +12,7 @@ index 605986fc87b52789f02b5058c4e9b4e348701e7d..85fa77e475f41c98c189b10b70284665
              name: `shared-sync-${this.webOptions.identifier}`,
              type: 'module'
 diff --git a/lib/src/worker/db/open-worker-database.js b/lib/src/worker/db/open-worker-database.js
-index fbb10074c8f70f5f2ffd8000d813880d78de71ed..e9f2e6eaf9a1a3c7a6dba310aee952b8c02171cb 100644
+index 6ef553fc33dcfb821249980af398558e73a6689a..28fa9eb372dbdd3447200ae886ff25dbd1ae8618 100644
 --- a/lib/src/worker/db/open-worker-database.js
 +++ b/lib/src/worker/db/open-worker-database.js
 @@ -10,12 +10,12 @@ export function openWorkerDatabasePort(workerIdentifier, multipleTabs = true) {

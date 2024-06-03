@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@powersync/web':
-    specifier: 0.6.0
-    version: 0.6.0(@journeyapps/wa-sqlite@0.2.0)
+    specifier: 1.0.0
+    version: 1.0.0(@journeyapps/wa-sqlite@0.2.0)(@powersync/common@1.10.0)
 
 devDependencies:
   esbuild:
@@ -230,11 +230,10 @@ packages:
     resolution: {integrity: sha512-cZ0n1p4tteouancHulODtR3VChjp/teYhGQkAw4cCmeFytu+OcLTaMLhvFcUVoZdIT9LEu2hait/UTHx/ZaNHw==}
     dev: false
 
-  /@powersync/common@1.8.0:
-    resolution: {integrity: sha512-9tuZGSTZfe3TyqCk5a7iYa4Q8aazzOdfLfniY1EEBux2h7P6dONd+MNdA7gGwI/EgJoIiVb/OIIcfGnWN5LGdQ==}
+  /@powersync/common@1.10.0:
+    resolution: {integrity: sha512-DyC3h+bGIhJdMwCFTHKHI1V1eHIY7Ua6aFypOpHBSSH9DniaUJvEL+GYcFfVwoVYeMFGxvvVwikkPb08+INNFA==}
     dependencies:
       async-mutex: 0.4.1
-      bson: 6.7.0
       buffer: 6.0.3
       can-ndjson-stream: 1.0.2
       cross-fetch: 4.0.0
@@ -247,20 +246,20 @@ packages:
       - encoding
     dev: false
 
-  /@powersync/web@0.6.0(@journeyapps/wa-sqlite@0.2.0):
-    resolution: {integrity: sha512-27/FI/KnkI6Lniw9w6UqFdJflu6aix82r79jkZw8s92bZ2fu+mY4NcPabgYJMn12WJgfd3KEECtu+8oyGvfrMA==}
+  /@powersync/web@1.0.0(@journeyapps/wa-sqlite@0.2.0)(@powersync/common@1.10.0):
+    resolution: {integrity: sha512-n5bJs2HxiHGEqudUifiAW4v0ouLiHhF/r1Bxq2VAcYZJoiuAp3WXxmNws+S9pixrDiYii7N5mpBS/7bdYMuA7Q==}
     peerDependencies:
       '@journeyapps/wa-sqlite': ~0.2.0
+      '@powersync/common': ^1.10.0
     dependencies:
       '@journeyapps/wa-sqlite': 0.2.0
-      '@powersync/common': 1.8.0
+      '@powersync/common': 1.10.0
       async-mutex: 0.4.1
+      bson: 6.7.0
       buffer: 6.0.3
       comlink: 4.4.1
       js-logger: 1.6.1
       lodash: 4.17.21
-    transitivePeerDependencies:
-      - encoding
     dev: false
 
   /@types/fs-extra@11.0.4:
